@@ -6,7 +6,7 @@ function renderHeader($menuItems) {
   echo '<nav class="nav"><ul>';
 
   foreach ($menuItems as $item) {
-    // თუ ეს "რეზიუმე"-ს ელემენტია, დავამატოთ კლასი download-btn
+    
     $isDownload = !empty($item["download"]);
     $class = $isDownload ? 'class="download-btn"' : '';
     $download = $isDownload ? 'download' : '';
@@ -89,14 +89,14 @@ function renderContactForm($contactInfo) {
 function renderFooter($contactInfo) {
   echo '<footer class="footer"><div class="container footer-content">';
 
-  // 📞 საკონტაქტო ინფორმაცია
+  //  საკონტაქტო ინფორმაცია
   echo "<div class='contact-info'>
           <p>📞 <a href='tel:{$contactInfo['phone']}'>{$contactInfo['phone']}</a></p>
           <p>📧 <a href='mailto:{$contactInfo['email']}'>{$contactInfo['email']}</a></p>
           <p>📍 {$contactInfo['location']}</p>
         </div>";
 
-  // 🌐 სოციალური ბმულები
+  //  სოციალური ბმულები
   echo "<div class='social-links'>";
   foreach ($contactInfo['socials'] as $s) {
     echo "<a href='{$s['url']}' target='_blank' rel='noopener noreferrer'>
@@ -105,10 +105,10 @@ function renderFooter($contactInfo) {
   }
   echo "</div>";
 
-  // 📝 ავტორის ინფორმაცია
+  
   echo "<p class='copyright'>© 2025 Jaba Maisuradze — ყველა უფლება დაცულია</p></div>";
 
-  // 🔝 Back to top
+  
   echo "<a href='#home' class='back-to-top'><i class='fa-solid fa-arrow-up'></i></a>";
 
   echo '</footer>';

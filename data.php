@@ -114,7 +114,7 @@ $contactInfo = [
     ["icon" => "assets/images/instagram-removebg-preview.png", "url" => "https://instagram.com/yourprofile"],
     ["icon" => "assets/images/youtube-removebg-preview.png", "url" => "https://youtube.com/@yourchannel"]
   ],
-  // 🗺️ დაამატე ეს სტრიქონი:
+  
   "map" => "https://www.google.com/maps?q=Rustavi,Georgia&output=embed"
 ];
 

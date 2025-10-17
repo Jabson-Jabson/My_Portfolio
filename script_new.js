@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navMenu.classList.toggle("show");
   });
 
-  // დახუროს მენიუ როდესაც ბმულს დააკლიკებ
+  
   document.querySelectorAll(".nav a").forEach(link => {
     link.addEventListener("click", () => {
       menuToggle.classList.remove("active");

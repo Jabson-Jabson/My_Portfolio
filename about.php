@@ -14,9 +14,11 @@ require_once "components.php";
 </head>
 
 <body id="vanta-bg">
+
   <?php renderHeader($menuItems); ?>
 
   <!-- ABOUT SECTION -->
+
   <section id="about" class="about">
     <div class="container about-content">
       
@@ -44,9 +46,6 @@ require_once "components.php";
 
         <a href="works.php" class="btn-outline">იხილე ნამუშევრები</a>
       </div>
-
-      
-
     </div>
   </section>
 

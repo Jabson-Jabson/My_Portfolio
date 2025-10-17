@@ -1,6 +1,4 @@
-/* ===========================================
-   🌐 RESET + BASE STYLES
-=========================================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,9 +15,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===========================================
-   🧭 CONTAINER
-=========================================== */
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -28,16 +24,20 @@ body {
   background: transparent !important;
 }
 
-/* ===========================================
-   🔝 HEADER (Base + Compact Layout Fix)
-=========================================== */
+
+
+   
+   /* HEADER  */
+
+   
 .header {
   position: sticky;
   top: 0;
   z-index: 999;
   background: rgba(0, 0, 0, 0.65);
   backdrop-filter: blur(10px);
-  padding: 10px 0; /* ოდნავ გაზრდილი სიმაღლე */
+  padding: 10px 0; 
+  
   border-bottom: 1px solid rgba(161, 0, 235, 0.15);
 }
 
@@ -52,7 +52,8 @@ body {
 
 /* ლოგო */
 .logo img {
-  width: 58px; /* ცოტა უფრო დიდი ლოგო */
+  width: 58px; 
+  
   border-radius: 50%;
   transition: transform 0.3s ease;
 }
@@ -65,13 +66,15 @@ body {
 .nav ul {
   display: flex;
   list-style: none;
-  gap: 20px; /* ცოტა მეტი ჰაერი */
+  gap: 20px; 
+  
 }
 
 .nav a {
   color: #fff;
   font-weight: 500;
-  font-size: 17px; /* ოდნავ დიდი ტექსტი */
+  font-size: 17px; 
+  
   padding-bottom: 3px;
   transition: 0.3s;
 }
@@ -106,7 +109,8 @@ body {
 /* ღილაკი (რეზიუმე) */
 .download-btn {
   background: linear-gradient(90deg, #00c6ff, #0072ff);
-  padding: 8px 14px; /* ცოტა მეტი შიდა სივრცე */
+  padding: 8px 14px; 
+  
   border-radius: 6px;
   color: white;
   font-size: 16px;
@@ -123,9 +127,9 @@ body {
 
 
 
-/* ===========================================
-   🌟 HERO SECTION
-=========================================== */
+
+    /* HERO SECTION */
+
 .hero {
   display: flex;
   align-items: center;
@@ -220,9 +224,9 @@ body {
   border: 1px solid #00c6ff;
 }
 
-/* ===========================================
-   🧍 ABOUT SECTION
-=========================================== */
+
+   /* ABOUT SECTION */
+
 .about {
   padding: 90px 0;
 }
@@ -299,9 +303,9 @@ body {
   font-size: 0.9rem;
 }
 
-/* ===========================================
-   💡 WHY ME SECTION
-=========================================== */
+
+  /* WHY ME SECTION */
+
 .why-me {
   text-align: center;
   padding: 100px 0;
@@ -340,9 +344,9 @@ body {
   margin-bottom: 18px;
 }
 
-/* ===========================================
-   💼 WORKS SECTION
-=========================================== */
+
+  /* WORKS SECTION */
+
 .work {
   padding: 90px 0;
 }
@@ -434,9 +438,9 @@ body {
   box-shadow: 0 0 25px rgba(0, 114, 255, 0.8);
 }
 
-/* ===========================================
-   📸 LIGHTBOX
-=========================================== */
+
+ /* LIGHTBOX */
+
 .lightbox {
   position: fixed;
   inset: 0;
@@ -481,9 +485,9 @@ body {
   transform: scale(1.2);
 }
 
-/* ===========================================
-   💬 CONTACT SECTION
-=========================================== */
+
+  /* CONTACT SECTION */
+
 .contact-section {
   padding: 100px 20px;
   text-align: center;
@@ -576,9 +580,9 @@ textarea::placeholder {
   75% { transform: translateX(-5px); }
 }
 
-/* ===========================================
-   👣 FOOTER
-=========================================== */
+
+   /* FOOTER */
+
 .footer {
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
@@ -629,9 +633,9 @@ textarea::placeholder {
   transform: translateY(-3px);
 }
 
-/* ===========================================
-   🌈 TEXT SHADOW (Visibility)
-=========================================== */
+
+  /* TEXT SHADOW  */
+
 h1,
 h2,
 h3,
@@ -643,9 +647,9 @@ a {
 
 
  
-/* ===========================================
-   🍔 HAMBURGER MENU STYLES
-=========================================== */
+
+ /* HAMBURGER MENU STYLES */
+
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -667,6 +671,7 @@ a {
 }
 
 /* აქტიური მდგომარეობა (ანიმაცია X ფორმაში) */
+
 .menu-toggle.active span:nth-child(1) {
   transform: rotate(45deg) translate(6px, 6px);
 }
@@ -678,6 +683,7 @@ a {
 }
 
 /* მობილურზე მენიუ */
+
 @media (max-width: 600px) {
   .menu-toggle {
     display: flex;
@@ -711,9 +717,9 @@ a {
 
 
 
-/* ===========================================
-   📱 RESPONSIVE — TABLET (≤ 1024px)
-=========================================== */
+  /* RESPONSIVE — TABLET (≤ 1024px) */
+
+   
 @media (max-width: 1024px) {
   /* Header */
   .logo img {
@@ -770,9 +776,9 @@ a {
   }
 }
 
-/* ===========================================
-   📱 RESPONSIVE — MOBILE (≤ 600px)
-=========================================== */
+
+  /* RESPONSIVE — MOBILE (≤ 600px) */
+
 @media (max-width: 600px) {
   /* Header */
   .header {
